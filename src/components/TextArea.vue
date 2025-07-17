@@ -9,20 +9,23 @@ const props = defineProps({
 </script>
 
 <template>
-  <p>{{}}</p>
   <textarea
     ref="message"
     placeholder="Start typing here... (or paste your text)"
-    class="bg-gray-800 text-white resize-y rounded-md"
+    class="bg-gray-800 text-white h-40 resize-y rounded-md"
   ></textarea>
-  <div class="flex flex-row justify-between text-white">
-    <div>
-      <input type="checkbox" id="one" value="One" />
-      <label for="one">One</label>
+  <div class="flex flex-col justify-between text-white">
+    <div class="flex flex-col">
+      <div>
+        <input type="checkbox" id="one" value="One" />
+        <label class="ms-2" for="one">Exclude Spaces</label>
+      </div>
 
-      <input type="checkbox" id="two" value="Two" />
-      <label for="two">Two</label>
+      <div>
+        <input type="checkbox" id="two" value="Two" />
+        <label class="ms-2" for="two">Set Character Limit</label>
+      </div>
     </div>
-    <p>Approx. reading time [value here]</p>
+    <p>Approx. reading time: [value here]</p>
   </div>
 </template>
