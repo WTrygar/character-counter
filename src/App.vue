@@ -14,7 +14,7 @@ const charCount = computed(() => {
 
 <template>
   <div
-    class="flex flex-col content-center px-[1.5%] sm:px-[3%] md:px-[10%] bg-[url(/src/assets/images/bg-dark-theme.png)] h-screen text-white"
+    class="flex flex-col content-center px-[3%] sm:px-[3%] md:px-[10%] bg-[url(/src/assets/images/bg-dark-theme.png)] h-screen text-white"
   >
     <Navbar />
     <h2
