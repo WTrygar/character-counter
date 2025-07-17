@@ -2,6 +2,7 @@
 import { computed, ref } from 'vue'
 import CounterBox from './components/CounterBox.vue'
 import LetterDensity from './components/LetterDensity.vue'
+import Navbar from './components/Navbar.vue'
 import TextArea from './components/TextArea.vue'
 
 const message = ref('')
@@ -15,6 +16,7 @@ const charCount = computed(() => {
   <div
     class="flex flex-col content-center p-[1.5%] bg-[url(/src/assets/images/bg-dark-theme.png)] h-screen text-white"
   >
+    <Navbar />
     <h2 class="text-center text-3xl font-bold m-5">Analyze your text in real-time.</h2>
 
     <TextArea :message="message" />
