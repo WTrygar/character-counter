@@ -6,7 +6,7 @@
         <h4>E</h4>
       </div>
       <div class="w-7/10 sm:w-8/10 h-4 bg-gray-200 rounded-full dark:bg-gray-800">
-        <div class="h-4 bg-blue-600 rounded-full dark:bg-fuchsia-300" style="width: 16.06%"></div>
+        <div class="h-4 rounded-full bg-fuchsia-300" style="width: 16.06%"></div>
       </div>
       <div class="w-4/20 sm:w-3/20 text-right">
         <p>40 (16.06%)</p>
@@ -17,7 +17,7 @@
         <h4>I</h4>
       </div>
       <div class="w-7/10 sm:w-8/10 h-4 bg-gray-200 rounded-full dark:bg-gray-800">
-        <div class="h-4 bg-blue-600 rounded-full dark:bg-fuchsia-300" style="width: 11.65%"></div>
+        <div class="h-4 rounded-full bg-fuchsia-300" style="width: 11.65%"></div>
       </div>
       <div class="w-4/20 sm:w-3/20 text-right">
         <p>29 (11.65%)</p>
@@ -28,7 +28,7 @@
         <h4>T</h4>
       </div>
       <div class="w-7/10 sm:w-8/10 h-4 bg-gray-200 rounded-full dark:bg-gray-800">
-        <div class="h-4 bg-blue-600 rounded-full dark:bg-fuchsia-300" style="width: 11.24%"></div>
+        <div class="h-4 rounded-full bg-fuchsia-300" style="width: 11.24%"></div>
       </div>
       <div class="w-4/20 sm:w-3/20 text-right">
         <p>28 (11.24)</p>
@@ -39,7 +39,7 @@
         <h4>O</h4>
       </div>
       <div class="w-7/10 sm:w-8/10 h-4 bg-gray-200 rounded-full dark:bg-gray-800">
-        <div class="h-4 bg-blue-600 rounded-full dark:bg-fuchsia-300" style="width: 8.84%"></div>
+        <div class="h-4 rounded-full bg-fuchsia-300" style="width: 8.84%"></div>
       </div>
       <div class="w-4/20 sm:w-3/20 text-right">
         <p>22 (8.84%)</p>
@@ -50,40 +50,7 @@
         <h4>N</h4>
       </div>
       <div class="w-7/10 sm:w-8/10 h-4 bg-gray-200 rounded-full dark:bg-gray-800">
-        <div class="h-4 bg-blue-600 rounded-full dark:bg-fuchsia-300" style="width: 8.43%"></div>
-      </div>
-      <div class="w-4/20 sm:w-3/20 text-right">
-        <p>21 (8.43%)</p>
-      </div>
-    </div>
-    <div class="flex flex-row justify-between items-center mt-4">
-      <div class="w-1/20">
-        <h4>N</h4>
-      </div>
-      <div class="w-7/10 sm:w-8/10 h-4 bg-gray-200 rounded-full dark:bg-gray-800">
-        <div class="h-4 bg-blue-600 rounded-full dark:bg-fuchsia-300" style="width: 8.43%"></div>
-      </div>
-      <div class="w-4/20 sm:w-3/20 text-right">
-        <p>21 (8.43%)</p>
-      </div>
-    </div>
-    <div class="flex flex-row justify-between items-center mt-4">
-      <div class="w-1/20">
-        <h4>N</h4>
-      </div>
-      <div class="w-7/10 sm:w-8/10 h-4 bg-gray-200 rounded-full dark:bg-gray-800">
-        <div class="h-4 bg-blue-600 rounded-full dark:bg-fuchsia-300" style="width: 8.43%"></div>
-      </div>
-      <div class="w-4/20 sm:w-3/20 text-right">
-        <p>21 (8.43%)</p>
-      </div>
-    </div>
-    <div class="flex flex-row justify-between items-center mt-4">
-      <div class="w-1/20">
-        <h4>N</h4>
-      </div>
-      <div class="w-7/10 sm:w-8/10 h-4 bg-gray-200 rounded-full dark:bg-gray-800">
-        <div class="h-4 bg-blue-600 rounded-full dark:bg-fuchsia-300" style="width: 8.43%"></div>
+        <div class="h-4 rounded-full bg-fuchsia-300" style="width: 8.43%"></div>
       </div>
       <div class="w-4/20 sm:w-3/20 text-right">
         <p>21 (8.43%)</p>
