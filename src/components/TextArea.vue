@@ -29,6 +29,11 @@ const store = useCounterStore()
         />
       </div>
     </div>
-    <p class="ms-2 text-black dark:text-white">Approx. reading time: [value here]</p>
+    <p v-if="store.approxReadTime > 1" class="ms-2 text-black dark:text-white">
+      Approx. reading time: ~{{ store.approxReadTime }} minutes
+    </p>
+    <p v-else class="ms-2 text-black dark:text-white">
+      Approx. reading time: ~{{ store.approxReadTime }} minute
+    </p>
   </div>
 </template>
