@@ -34,7 +34,10 @@ const store = useCounterStore()
           <div v-if="store.check">{{ store.characterCounterExcludingSpaces }}</div>
           <div v-else>{{ store.characterCounter }}</div>
         </template>
-        <template #description>Character Count</template>
+        <template #description>
+          <div v-if="store.check">Character Count (no space)</div>
+          <div v-else>Character Count</div>
+        </template>
       </CounterBox>
       <CounterBox class="bg-orange-400 sm:w-1/3">
         <template #counter>{{ store.wordCounter }}</template>
