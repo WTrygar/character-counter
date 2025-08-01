@@ -1,15 +1,17 @@
 <script setup>
-import { computed, ref } from 'vue'
 import CounterBox from './components/CounterBox.vue'
 import LetterDensity from './components/LetterDensity.vue'
 import Navbar from './components/Navbar.vue'
 import TextArea from './components/TextArea.vue'
+import { useCounterStore } from './stores/ProductStore'
 
-const message = ref('')
-console.log(message)
-const charCount = computed(() => {
-  return message.split('').length
-})
+const store = useCounterStore()
+
+// const message = ref('')
+// console.log(message)
+// const charCount = computed(() => {
+//   return message.split('').length
+// })
 </script>
 
 <template>
@@ -22,16 +24,24 @@ const charCount = computed(() => {
     >
       Analyze your text in real-time.
     </h2>
-
-    <TextArea :message="message" />
+    <!-- :message="message" -->
+    <TextArea />
     <div
       class="flex flex-col sm:flex-row sm:justify-stretch sm:w-full sm:h-30 gap-2 text-black my-5"
     >
-      <CounterBox class="bg-fuchsia-300 sm:w-1/3" />
-      <CounterBox class="bg-orange-400 sm:w-1/3" />
-      <CounterBox class="bg-red-300 sm:w-1/3" />
+      <CounterBox class="bg-fuchsia-300 sm:w-1/3">
+        <template #counter>{{ store.characterCounter }}</template>
+        <template #description>Character Count</template>
+      </CounterBox>
+      <CounterBox class="bg-orange-400 sm:w-1/3">
+        <template #counter>{{ store.wordCounter }}</template>
+        <template #description>Word Count</template>
+      </CounterBox>
+      <CounterBox class="bg-red-300 sm:w-1/3">
+        <template #counter>{{ store.sentenceCounter }}</template>
+        <template #description>Sentence Count</template>
+      </CounterBox>
     </div>
     <LetterDensity />
-    <p>{{ message }}</p>
   </div>
 </template>

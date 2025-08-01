@@ -1,20 +1,14 @@
 import { defineStore } from 'pinia'
 
-export const useProductStore = defineStore('product', {
-  state: () => ({
-    products: [message],
-  }),
-  getters: {
-    productCount(state) {
-      return state.products.length
-    },
-    productsCheaperThan(state) {
-      return (price) => state.products.filter((product) => product.price < price)
-    },
+export const useCounterStore = defineStore('counter', {
+  state: () => {
+    return { message: '' }
   },
-  actions: {
-    addProduct() {
-      this.products.push()
-    },
+  getters: {
+    characterCounter: (state) => state.message.length,
+
+    wordCounter: (state) => state.message.split(' ').length,
+
+    sentenceCounter: (state) => state.message.split(/[.?!]/g).filter(Boolean).length,
   },
 })

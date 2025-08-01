@@ -1,16 +1,14 @@
 <script setup>
-import { defineProps } from 'vue'
+import { useCounterStore } from '@/stores/ProductStore'
 
-const props = defineProps({
-  message: {
-    type: String,
-  },
-})
+
+const store = useCounterStore()
+const message = store.message
 </script>
 
 <template>
   <textarea
-    ref="message"
+    v-model="store.message"
     placeholder="Start typing here... (or paste your text)"
     class="bg-gray-200 dark:bg-gray-800 text-black dark:text-white min-h-50 resize-y rounded-md"
   ></textarea>
