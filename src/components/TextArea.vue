@@ -8,7 +8,7 @@ const store = useCounterStore()
   <textarea
     v-model="store.message"
     placeholder="Start typing here... (or paste your text)"
-    class="bg-gray-200 dark:bg-gray-800 text-black dark:text-white min-h-50 resize-y rounded-md"
+    class="bg-gray-200 dark:bg-gray-800 text-black dark:text-white min-h-50 resize-y rounded-md focus:border-2 focus:border-solid focus:ring-fuchsia-300 focus:border-fuchsia-300"
   ></textarea>
   <div class="flex flex-col sm:flex-row my-2 justify-between text-white">
     <div class="flex flex-col sm:flex-row sm:gap-2">

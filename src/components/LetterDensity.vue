@@ -3,13 +3,13 @@
     <h3 class="font-semibold text-xl">Letter Density</h3>
     <div class="flex flex-row justify-between items-center mt-4">
       <div class="w-1/20">
-        <h4>E</h4>
+        <h4>A</h4>
       </div>
       <div class="w-7/10 sm:w-8/10 h-4 bg-gray-200 rounded-full dark:bg-gray-800">
         <div class="h-4 rounded-full bg-fuchsia-300" style="width: 16.06%"></div>
       </div>
       <div class="w-4/20 sm:w-3/20 text-right">
-        <p>40 (16.06%)</p>
+        <p>{{ store.countA }}</p>
       </div>
     </div>
     <div class="flex flex-row justify-between items-center mt-4">
@@ -78,4 +78,8 @@
   </button>
 </template>
 
-<script setup></script>
+<script setup>
+import { useCounterStore } from '@/stores/ProductStore'
+
+const store = useCounterStore()
+</script>

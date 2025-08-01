@@ -15,5 +15,8 @@ export const useCounterStore = defineStore('counter', {
     sentenceCounter: (state) => state.message.split(/[.?!]/g).filter(Boolean).length,
 
     approxReadTime: (state) => Math.round(state.message.length / 200),
+
+    countA: (state) =>
+      (state.message.match(/a/g) || []).length + (state.message.match(/A/g) || []).length,
   },
 })
