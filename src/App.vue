@@ -30,7 +30,10 @@ const store = useCounterStore()
       class="flex flex-col sm:flex-row sm:justify-stretch sm:w-full sm:h-30 gap-2 text-black my-5"
     >
       <CounterBox class="bg-fuchsia-300 sm:w-1/3">
-        <template #counter>{{ store.characterCounter }}</template>
+        <template #counter>
+          <div v-if="store.check">{{ store.characterCounterExcludingSpaces }}</div>
+          <div v-else>{{ store.characterCounter }}</div>
+        </template>
         <template #description>Character Count</template>
       </CounterBox>
       <CounterBox class="bg-orange-400 sm:w-1/3">
