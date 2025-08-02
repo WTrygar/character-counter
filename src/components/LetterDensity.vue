@@ -1,3 +1,4 @@
+<!-- is it too long? yeah, probably, I agree, will try to make it shorter in the future -->
 <template>
   <div
     id="letterbox"
@@ -24,6 +25,27 @@
         <p>
           {{ store.countA }} ({{
             Math.round((store.countA / store.message.length) * 10000) / 100
+          }}%)
+        </p>
+      </div>
+    </div>
+    <div
+      :class="{ hidden: !(store.countĄ > 0) }"
+      class="flex flex-row grow justify-between items-center mt-4"
+    >
+      <div class="w-1/20">
+        <h4>Ą</h4>
+      </div>
+      <div class="w-7/10 sm:w-8/10 h-4 bg-gray-200 rounded-full dark:bg-gray-800">
+        <div
+          class="h-4 rounded-full bg-fuchsia-300"
+          :style="{ width: (store.countĄ / store.message.length) * 100 + '%' }"
+        ></div>
+      </div>
+      <div class="w-4/20 sm:w-3/20 text-right">
+        <p>
+          {{ store.countĄ }} ({{
+            Math.round((store.countĄ / store.message.length) * 10000) / 100
           }}%)
         </p>
       </div>
@@ -71,6 +93,27 @@
       </div>
     </div>
     <div
+      :class="{ hidden: !(store.countĆ > 0) }"
+      class="flex flex-row grow justify-between items-center mt-4"
+    >
+      <div class="w-1/20">
+        <h4>Ć</h4>
+      </div>
+      <div class="w-7/10 sm:w-8/10 h-4 bg-gray-200 rounded-full dark:bg-gray-800">
+        <div
+          class="h-4 rounded-full bg-fuchsia-300"
+          :style="{ width: (store.countĆ / store.message.length) * 100 + '%' }"
+        ></div>
+      </div>
+      <div class="w-4/20 sm:w-3/20 text-right">
+        <p>
+          {{ store.countĆ }} ({{
+            Math.round((store.countĆ / store.message.length) * 10000) / 100
+          }}%)
+        </p>
+      </div>
+    </div>
+    <div
       :class="{ hidden: !(store.countD > 0) }"
       class="flex flex-row grow justify-between items-center mt-4"
     >
@@ -108,6 +151,27 @@
         <p>
           {{ store.countE }} ({{
             Math.round((store.countE / store.message.length) * 10000) / 100
+          }}%)
+        </p>
+      </div>
+    </div>
+    <div
+      :class="{ hidden: !(store.countĘ > 0) }"
+      class="flex flex-row grow justify-between items-center mt-4"
+    >
+      <div class="w-1/20">
+        <h4>Ę</h4>
+      </div>
+      <div class="w-7/10 sm:w-8/10 h-4 bg-gray-200 rounded-full dark:bg-gray-800">
+        <div
+          class="h-4 rounded-full bg-fuchsia-300"
+          :style="{ width: (store.countĘ / store.message.length) * 100 + '%' }"
+        ></div>
+      </div>
+      <div class="w-4/20 sm:w-3/20 text-right">
+        <p>
+          {{ store.countĘ }} ({{
+            Math.round((store.countĘ / store.message.length) * 10000) / 100
           }}%)
         </p>
       </div>
@@ -260,6 +324,27 @@
       </div>
     </div>
     <div
+      :class="{ hidden: !(store.countŁ > 0) }"
+      class="flex flex-row grow justify-between items-center mt-4"
+    >
+      <div class="w-1/20">
+        <h4>Ł</h4>
+      </div>
+      <div class="w-7/10 sm:w-8/10 h-4 bg-gray-200 rounded-full dark:bg-gray-800">
+        <div
+          class="h-4 rounded-full bg-fuchsia-300"
+          :style="{ width: (store.countŁ / store.message.length) * 100 + '%' }"
+        ></div>
+      </div>
+      <div class="w-4/20 sm:w-3/20 text-right">
+        <p>
+          {{ store.countŁ }} ({{
+            Math.round((store.countŁ / store.message.length) * 10000) / 100
+          }}%)
+        </p>
+      </div>
+    </div>
+    <div
       :class="{ hidden: !(store.countM > 0) }"
       class="flex flex-row grow justify-between items-center mt-4"
     >
@@ -302,6 +387,27 @@
       </div>
     </div>
     <div
+      :class="{ hidden: !(store.countŃ > 0) }"
+      class="flex flex-row grow justify-between items-center mt-4"
+    >
+      <div class="w-1/20">
+        <h4>Ń</h4>
+      </div>
+      <div class="w-7/10 sm:w-8/10 h-4 bg-gray-200 rounded-full dark:bg-gray-800">
+        <div
+          class="h-4 rounded-full bg-fuchsia-300"
+          :style="{ width: (store.countŃ / store.message.length) * 100 + '%' }"
+        ></div>
+      </div>
+      <div class="w-4/20 sm:w-3/20 text-right">
+        <p>
+          {{ store.countŃ }} ({{
+            Math.round((store.countŃ / store.message.length) * 10000) / 100
+          }}%)
+        </p>
+      </div>
+    </div>
+    <div
       :class="{ hidden: !(store.countO > 0) }"
       class="flex flex-row grow justify-between items-center mt-4"
     >
@@ -318,6 +424,27 @@
         <p>
           {{ store.countO }} ({{
             Math.round((store.countO / store.message.length) * 10000) / 100
+          }}%)
+        </p>
+      </div>
+    </div>
+    <div
+      :class="{ hidden: !(store.countÓ > 0) }"
+      class="flex flex-row grow justify-between items-center mt-4"
+    >
+      <div class="w-1/20">
+        <h4>Ó</h4>
+      </div>
+      <div class="w-7/10 sm:w-8/10 h-4 bg-gray-200 rounded-full dark:bg-gray-800">
+        <div
+          class="h-4 rounded-full bg-fuchsia-300"
+          :style="{ width: (store.countÓ / store.message.length) * 100 + '%' }"
+        ></div>
+      </div>
+      <div class="w-4/20 sm:w-3/20 text-right">
+        <p>
+          {{ store.countÓ }} ({{
+            Math.round((store.countÓ / store.message.length) * 10000) / 100
           }}%)
         </p>
       </div>
@@ -402,6 +529,27 @@
         <p>
           {{ store.countS }} ({{
             Math.round((store.countS / store.message.length) * 10000) / 100
+          }}%)
+        </p>
+      </div>
+    </div>
+    <div
+      :class="{ hidden: !(store.countŚ > 0) }"
+      class="flex flex-row grow justify-between items-center mt-4"
+    >
+      <div class="w-1/20">
+        <h4>Ś</h4>
+      </div>
+      <div class="w-7/10 sm:w-8/10 h-4 bg-gray-200 rounded-full dark:bg-gray-800">
+        <div
+          class="h-4 rounded-full bg-fuchsia-300"
+          :style="{ width: (store.countŚ / store.message.length) * 100 + '%' }"
+        ></div>
+      </div>
+      <div class="w-4/20 sm:w-3/20 text-right">
+        <p>
+          {{ store.countŚ }} ({{
+            Math.round((store.countŚ / store.message.length) * 10000) / 100
           }}%)
         </p>
       </div>
@@ -549,6 +697,48 @@
         <p>
           {{ store.countZ }} ({{
             Math.round((store.countZ / store.message.length) * 10000) / 100
+          }}%)
+        </p>
+      </div>
+    </div>
+    <div
+      :class="{ hidden: !(store.countŹ > 0) }"
+      class="flex flex-row grow justify-between items-center mt-4"
+    >
+      <div class="w-1/20">
+        <h4>Ź</h4>
+      </div>
+      <div class="w-7/10 sm:w-8/10 h-4 bg-gray-200 rounded-full dark:bg-gray-800">
+        <div
+          class="h-4 rounded-full bg-fuchsia-300"
+          :style="{ width: (store.countŹ / store.message.length) * 100 + '%' }"
+        ></div>
+      </div>
+      <div class="w-4/20 sm:w-3/20 text-right">
+        <p>
+          {{ store.countŹ }} ({{
+            Math.round((store.countŹ / store.message.length) * 10000) / 100
+          }}%)
+        </p>
+      </div>
+    </div>
+    <div
+      :class="{ hidden: !(store.countŻ > 0) }"
+      class="flex flex-row grow justify-between items-center mt-4"
+    >
+      <div class="w-1/20">
+        <h4>Ż</h4>
+      </div>
+      <div class="w-7/10 sm:w-8/10 h-4 bg-gray-200 rounded-full dark:bg-gray-800">
+        <div
+          class="h-4 rounded-full bg-fuchsia-300"
+          :style="{ width: (store.countŻ / store.message.length) * 100 + '%' }"
+        ></div>
+      </div>
+      <div class="w-4/20 sm:w-3/20 text-right">
+        <p>
+          {{ store.countŻ }} ({{
+            Math.round((store.countŻ / store.message.length) * 10000) / 100
           }}%)
         </p>
       </div>
