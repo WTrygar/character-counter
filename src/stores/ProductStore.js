@@ -2,19 +2,19 @@ import { defineStore } from 'pinia'
 
 export const useCounterStore = defineStore('counter', {
   state: () => {
-    return { message: '', limit: 0, check: false, isActive: false }
+    return { message: '', limit: 0, limitActive: false, check: false, isActive: false }
   },
   getters: {
     characterCounter: (state) => state.message.length,
 
     characterCounterExcludingSpaces: (state) =>
-      state.message.length - state.message.split(' ').length,
+      state.message.length - state.message.split(' ').length + 1,
 
-    wordCounter: (state) => state.message.split(' ').length,
+    wordCounter: (state) => state.message.trim().split(/\s+/).length,
 
     sentenceCounter: (state) => state.message.split(/[.?!]/g).filter(Boolean).length,
 
-    approxReadTime: (state) => Math.round(state.message.length / 200),
+    approxReadTime: (state) => Math.round(state.message.length / 1000),
 
     countA: (state) =>
       (state.message.match(/a/g) || []).length + (state.message.match(/A/g) || []).length,
