@@ -2,7 +2,7 @@
   <div
     id="letterbox"
     name="letterbox"
-    :class="{ 'max-h-lvh': store.isActive, 'max-h-60': !store.isActive }"
+    :class="{ 'max-h-l.2vh': store.isActive, 'max-h-60': !store.isActive }"
     class="overflow-hidden flex flex-col"
   >
     <h3 class="font-semibold text-xl">Letter Density</h3>
@@ -344,6 +344,27 @@
       </div>
     </div>
     <div
+      :class="{ hidden: !(store.countQ > 0) }"
+      class="flex flex-row grow justify-between items-center mt-4"
+    >
+      <div class="w-1/20">
+        <h4>Q</h4>
+      </div>
+      <div class="w-7/10 sm:w-8/10 h-4 bg-gray-200 rounded-full dark:bg-gray-800">
+        <div
+          class="h-4 rounded-full bg-fuchsia-300"
+          :style="{ width: (store.countQ / store.message.length) * 100 + '%' }"
+        ></div>
+      </div>
+      <div class="w-4/20 sm:w-3/20 text-right">
+        <p>
+          {{ store.countQ }} ({{
+            Math.round((store.countQ / store.message.length) * 10000) / 100
+          }}%)
+        </p>
+      </div>
+    </div>
+    <div
       :class="{ hidden: !(store.countR > 0) }"
       class="flex flex-row grow justify-between items-center mt-4"
     >
@@ -423,6 +444,27 @@
         <p>
           {{ store.countU }} ({{
             Math.round((store.countU / store.message.length) * 10000) / 100
+          }}%)
+        </p>
+      </div>
+    </div>
+    <div
+      :class="{ hidden: !(store.countV > 0) }"
+      class="flex flex-row grow justify-between items-center mt-4"
+    >
+      <div class="w-1/20">
+        <h4>V</h4>
+      </div>
+      <div class="w-7/10 sm:w-8/10 h-4 bg-gray-200 rounded-full dark:bg-gray-800">
+        <div
+          class="h-4 rounded-full bg-fuchsia-300"
+          :style="{ width: (store.countV / store.message.length) * 100 + '%' }"
+        ></div>
+      </div>
+      <div class="w-4/20 sm:w-3/20 text-right">
+        <p>
+          {{ store.countV }} ({{
+            Math.round((store.countV / store.message.length) * 10000) / 100
           }}%)
         </p>
       </div>
@@ -514,12 +556,13 @@
   </div>
   <button
     @click="store.isActive = !store.isActive"
-    class="flex flex-row items-center pt-10 w-30 hover:cursor-pointer"
+    class="flex flex-row items-center pt-2.5 w-30 hover:cursor-pointer"
   >
     <span>See more</span>
     <svg
       data-accordion-icon
-      class="w-3 h-3 rotate-180 shrink-0 ml-2"
+      class="w-3 h-3 shrink-0 ml-2"
+      :class="{ 'rotate-180': !store.isActive }"
       aria-hidden="true"
       xmlns="http://www.w3.org/2000/svg"
       fill="none"

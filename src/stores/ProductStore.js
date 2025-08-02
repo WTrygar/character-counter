@@ -48,6 +48,8 @@ export const useCounterStore = defineStore('counter', {
       (state.message.match(/o/g) || []).length + (state.message.match(/O/g) || []).length,
     countP: (state) =>
       (state.message.match(/p/g) || []).length + (state.message.match(/P/g) || []).length,
+    countQ: (state) =>
+      (state.message.match(/q/g) || []).length + (state.message.match(/Q/g) || []).length,
     countR: (state) =>
       (state.message.match(/r/g) || []).length + (state.message.match(/R/g) || []).length,
     countS: (state) =>
@@ -56,6 +58,8 @@ export const useCounterStore = defineStore('counter', {
       (state.message.match(/t/g) || []).length + (state.message.match(/T/g) || []).length,
     countU: (state) =>
       (state.message.match(/u/g) || []).length + (state.message.match(/U/g) || []).length,
+    countV: (state) =>
+      (state.message.match(/v/g) || []).length + (state.message.match(/V/g) || []).length,
     countW: (state) =>
       (state.message.match(/w/g) || []).length + (state.message.match(/W/g) || []).length,
     countX: (state) =>
