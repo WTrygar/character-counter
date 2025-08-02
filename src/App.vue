@@ -16,7 +16,7 @@ const store = useCounterStore()
 
 <template>
   <div
-    class="min-h-auto relative flex flex-col content-center px-[3%] sm:px-[3%] md:px-[10%] bg-gray-100 dark:bg-gray-900 h-screen text-black dark:text-white"
+    class="min-h-lvh max-auto relative flex flex-col content-center px-[3%] sm:px-[3%] md:px-[10%] bg-gray-100 dark:bg-gray-900 text-black dark:text-white"
   >
     <Navbar />
     <h2
