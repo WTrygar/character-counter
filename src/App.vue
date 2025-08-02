@@ -29,7 +29,9 @@ const store = useCounterStore()
     <div
       class="flex flex-col sm:flex-row sm:justify-stretch sm:w-full sm:h-30 gap-2 text-black my-5"
     >
-      <CounterBox class="bg-fuchsia-300 sm:w-1/3">
+      <CounterBox
+        class="bg-[url(/src/assets/images/pattern-character-count.svg)] bg-auto bg-no-repeat bg-right bg-fuchsia-200 sm:w-1/3"
+      >
         <template #counter>
           <div v-if="store.check">{{ store.characterCounterExcludingSpaces }}</div>
           <div v-else>{{ store.characterCounter }}</div>
@@ -39,14 +41,18 @@ const store = useCounterStore()
           <div v-else>Character Count</div>
         </template>
       </CounterBox>
-      <CounterBox class="bg-orange-400 sm:w-1/3">
+      <CounterBox
+        class="bg-[url(/src/assets/images/pattern-word-count.svg)] bg-auto bg-no-repeat bg-right bg-orange-400 sm:w-1/3"
+      >
         <template #counter>
           <span :class="{ hidden: store.message.length == 0 }">{{ store.wordCounter }}</span>
           <span :class="{ hidden: store.message.length > 0 }">0</span>
         </template>
         <template #description>Word Count</template>
       </CounterBox>
-      <CounterBox class="bg-red-300 sm:w-1/3">
+      <CounterBox
+        class="bg-[url(/src/assets/images/pattern-sentence-count.svg)] bg-auto bg-no-repeat bg-right bg-red-300 sm:w-1/3"
+      >
         <template #counter>{{ store.sentenceCounter }}</template>
         <template #description>Sentence Count</template>
       </CounterBox>
