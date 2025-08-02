@@ -746,7 +746,8 @@
   </div>
   <button
     @click="store.isActive = !store.isActive"
-    class="flex flex-row items-center pt-2.5 w-30 hover:cursor-pointer"
+    class="flex flex-row items-center pt-2.5 pb-5 w-30 hover:cursor-pointer"
+    :class="{ hidden: !([...new Set(store.message.split(''))].length > 5) }"
   >
     <span>See more</span>
     <svg
