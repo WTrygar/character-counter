@@ -1,6 +1,12 @@
 # character counter
 
-This template should help get you started developing with Vue 3 in Vite.
+Application that counts characters, words and sentences. Made with Vue3, Pinia and Tailwind.
+
+<img width="928" height="938" alt="image" src="https://github.com/user-attachments/assets/71646011-b225-4da9-b1ae-2612eac560fa" />
+
+<img width="932" height="921" alt="image" src="https://github.com/user-attachments/assets/ff10052f-67d2-41d0-9c7b-983e6aa8062d" />
+
+
 
 ## Recommended IDE Setup
 
